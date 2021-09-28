@@ -30,7 +30,7 @@ To mount a file system, we use the mount command. We use the mount command with 
 ## ZFS use case.
 
 ## How to check which process running on which port?
-netstat -lntp
+netstat -anp
 
 ## what is unix time sharing?
 Unix allows multitasking and multiprogramming. It allows users to run programs concurrently. Hence it is time sharing OS.
