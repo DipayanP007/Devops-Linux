@@ -43,3 +43,39 @@ Sbin contains the binaries of commands which require root priviledges. The /sbin
 
 usr/sbin contains binary files for the commands that requires root priviledges and which are user specific.
 
+## Example of grep, awk, sed
+**Grep** command is used for finding particular patterns in a file and to display all the fields matching that pattern. 
+
+Suppose we want to find a word _name_ common in a file then we can do this by
+
+grep -i "name" Name.txt  (here i is used as to ignore case senstivity)
+
+likewise we can use this grep command with different options 
+
+**Awk** command is more of scripting language used in manipulating data and generating reports. 
+
+When using ‘awk’ we enclose patterns in curly braces. Both pattern and action form a rule and the entire awk program is enclosed in single quotes.
+
+awk '{print}' Name.txt  (here since pattern is not specified it will print all)
+
+awk '/name/ {print}' Name.txt
+
+it will print lines containing name.
+
+awk ‘NR==3, NR==6 {print NR,$0}’ Name.txt
+
+  It will display from line number 3 to number 6.
+
+**SED** is short for stream editor. It can be used to perform different functions such as searching.
+
+sed 's/manager/operations/g' example.txt
+
+To replace only on a specific line, specify the file line as below where we are replacing on the third line.
+
+sed '3 s/manager/operations/'g  example.txt 
+
+here we wil also use i flag to save the file 
+
+sed -i s/manager/operations/'g example.txt
+
+
