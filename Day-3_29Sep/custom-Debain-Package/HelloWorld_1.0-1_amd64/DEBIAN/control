@@ -1,0 +1,5 @@
+Package: helloworld
+Version: 1.0
+Architecture: amd64
+Maintainer: Dipayan Pramanik
+Description: This program prints Hello World.
