@@ -1,7 +1,7 @@
 ## How many tables are there in iptables?
 There are five tables in iptables:
 
-* Package FIltering Table 
+* Packet FIltering Table 
   
   Filter Table is the default table, if there are no user defined tables this built-in table is used. The built-in chains for this tables are INPUT, OUTPUT and FORWARD.
 
